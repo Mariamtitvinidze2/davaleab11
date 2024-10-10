@@ -23,13 +23,18 @@ background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     transition-property: transform;
     transition-duration: 8s;
     transition-timing-function: ease-in-out;
+    animation: sunanimation 2s infinite;
 }
 
-.sun:hover {
+@keyframes sunanimation {
+    from {
+        transform: rotate(180deg);
+    }
+} 
     
-    transform: rotate(180deg);
 
-}
+
+
 
 
 .tree {
@@ -40,12 +45,21 @@ background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     bottom: 245px;
     transition-property: transform;
     transition-duration: 2s;
+    animation: treeanimation 2s infinite;
    
 }
 
-.tree:hover {
-    transform: translatex(-1300px);
+@keyframes treeanimation {
+    from {
+        transform: translateX(1200px);
+    }
+
+    to {
+        transform:translateX(-1300px) ;
+    }
 }
+
+
 
 .mario1 {
     width: 150px;
@@ -55,12 +69,21 @@ background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     bottom: 125px;
     transition-property: transform;
     transition-duration: 4s;
+    animation: mario1animation 4s infinite;
+}
+
+@keyframes mario1animation  {
+    from {
+        transform: translateX(-1300px);
+    }
+
+    to {
+        transform: translateX(1100px);
+    }
 }
 
 
-.mario1:hover {
-    transform: translatex(1300px);
-}
+
 
 
 .mario2 {
@@ -71,9 +94,19 @@ background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     bottom: 40px;
     transition-property: transform;
     transition-duration: 15s;
+    animation: mario2animation 6s infinite;
 }
 
-.mario2:hover {
-    transform: translatex(-1300px);
+@keyframes mario2animation {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(-1000px);
+    }
 }
+   
+
+
 
