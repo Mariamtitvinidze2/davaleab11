@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.container {
+    position: relative;
+}
+
+.background {
+    
+   width: 1505px;
+height: 740px;
+flex-shrink: 0;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+}
+
+.sun {
+    position: absolute;
+    left: 848px;
+    transition-property: transform;
+    transition-duration: 8s;
+    transition-timing-function: ease-in-out;
+}
+
+.sun:hover {
+    
+    transform: rotate(180deg);
+
+}
+
+
+.tree {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 50px;
+    bottom: 245px;
+    transition-property: transform;
+    transition-duration: 2s;
+   
+}
+
+.tree:hover {
+    transform: translatex(-1300px);
+}
+
+.mario1 {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+    bottom: 125px;
+    transition-property: transform;
+    transition-duration: 4s;
+}
+
+
+.mario1:hover {
+    transform: translatex(1300px);
+}
+
+
+.mario2 {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+    transition-property: transform;
+    transition-duration: 15s;
+}
+
+.mario2:hover {
+    transform: translatex(-1300px);
+}
+
